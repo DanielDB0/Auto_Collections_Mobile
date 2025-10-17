@@ -1,7 +1,7 @@
 class Marcas
 {
-  final String Nome;
+  final String nome;
   final String descricao;
 
-  const Marcas(this.Nome, this.descricao);
+  const Marcas(this.nome, this.descricao);
 }

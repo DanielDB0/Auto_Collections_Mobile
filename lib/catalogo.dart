@@ -15,63 +15,115 @@ class CatalogoPag extends StatelessWidget {
         home: Scaffold(
           backgroundColor: const Color.fromARGB(255, 255, 255, 255),
           //Body
-          body: Center(
-            child: Container( 
+          body: Container( 
                       alignment: Alignment.center,
-                      padding: const EdgeInsets.all(32.0),
                       color: const Color.fromARGB(255, 255, 255, 236),
-                      width: MediaQuery.of(context).size.width * 90 /100,
-                      height: MediaQuery.of(context).size.height * 80 /100,
                       child: 
+                      SingleChildScrollView(
+                        child: 
                       Column(
                         children: [
-                            Container(
-                              child: Text(
-                              textAlign: TextAlign.center,
-                              'Catálogo',
-                            ),
-                          ),
-                          Container(
-                            child: Column(
-                              children: [
-                                Container(
-
-                                  child: Row(
-                                    children: [
-                                      Card(context),
-                                      Card(context),
-                                      Card(context),
-                                    ],
-                                  )
-                                )
-                              ],
-                            )
+                            Text(
+                            textAlign: TextAlign.center,
+                            'Catálogo'),
+                          Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Card(context),
+                                  Card(context),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Card(context),
+                                  Card(context),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Card(context),
+                                  Card(context),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Card(context),
+                                  Card(context),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Card(context),
+                                  Card(context),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Card(context),
+                                  Card(context),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Card(context),
+                                  Card(context),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Card(context),
+                                  Card(context),
+                                ],
+                              ),
+                            ],
                           )
                         ]
                       )
+                      )
                     ),
           )
-        )
         );
         
         }
+  // ignore: non_constant_identifier_names
   Widget Card(BuildContext context){
     return Container(
-      margin: EdgeInsets.only(left: MediaQuery.of(context).size.width * 3 / 100, right: MediaQuery.of(context).size.width * 3 / 100),
+      margin: EdgeInsets.only(
+        left: MediaQuery.of(context).size.width * 10 / 100, 
+        right: MediaQuery.of(context).size.width * 10 / 100,
+        top: MediaQuery.of(context).size.height * 5 / 100
+        ),
       decoration: BoxDecoration(
-        color: Color.fromARGB(255, 217, 217, 217),
+        color: Color.fromARGB(255, 155, 43, 31),
         borderRadius: BorderRadius.all(Radius.circular(20))
       ),
-      child: Column(
-        children: [
-          Container(
-            child: Image.asset('image/logotipo.png'),
-          ),
-          Container(
-            color: Color.fromARGB(255, 155, 43, 31),
-            child: Text('Nome Produto')
-          )
-        ],
+      child: Container(
+        width: MediaQuery.of(context).size.width * 20 / 100,
+        margin: EdgeInsets.only(
+          left: MediaQuery.of(context).size.width * 5 / 100, 
+          right: MediaQuery.of(context).size.width * 5 / 100, 
+          top: MediaQuery.of(context).size.height * 5 / 100, 
+          bottom: MediaQuery.of(context).size.height * 5 / 100),
+        child: Column(
+          children: [
+            Container(
+              child: Image.asset('image/logotipo.png'),
+            ),
+            Container(
+              child: Column(
+                children: [
+                  Container(
+                    child: Text('Nome Produto')
+                  ),
+                  Container(
+                    child: Text('Preço'),
+                  )
+                ],
+              )
+            ),
+          ],
+      )
       )
     );
   }        

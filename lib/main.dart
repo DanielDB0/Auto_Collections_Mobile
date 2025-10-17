@@ -27,13 +27,12 @@ class MainAPP extends State<MainApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
         home: Scaffold(
-          backgroundColor: const Color.fromARGB(255, 255, 255, 255),
           //AppBar
           appBar: AppBar(
             flexibleSpace: 
               NavigationBar(
                 selectedIndex: pag,
-                surfaceTintColor: const Color.fromARGB(255, 255, 188, 123),
+                surfaceTintColor: const Color.fromARGB(255, 155, 43, 31),
                 destinations: <Widget>[
                   _navegar(0, Image.asset('image/logotipo.png')),
                   _navegar(1, const Text('Marcas')),

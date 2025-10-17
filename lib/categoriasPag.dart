@@ -4,6 +4,7 @@ void categoriaspag() {
   runApp(const categoriasPag());
 }
 
+// ignore: camel_case_types
 class categoriasPag extends StatelessWidget {
 
   const categoriasPag({super.key});
